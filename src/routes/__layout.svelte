@@ -1,19 +1,15 @@
-<script lang="ts" context="module">
-    export const prerender = true
-    export const load = async ({ url, fetch}) => {
-        const res = await fetch('posts.json')
-        return res.ok ? { props: { path: url.pathname, posts: await res.json() } } : { props: { path: url.pathname} } 
-    }
-</script>
 <script lang="ts">
-    import { browser } from '$app/env'
-    import { fly } from 'svelte/transition'
-    import Header from '$lib/components/header.svelte'
-    import Footer from '$lib/components/footer.svelte'
+	import 'uno.css';
+	
+	import Header from '$lib/components/Header.svelte';
+	import Footer from '$lib/components/Footer.svelte';
 </script>
-
-<!--Header/-->
-
-<slot/>
-
-<!--Footer/-->
+<body class="bg-#1A1A1A text-white">
+	<div class="container mx-auto">
+		<Header/>
+		<main>
+			<slot />
+		</main>
+		<Footer/>
+	</div>
+</body>
