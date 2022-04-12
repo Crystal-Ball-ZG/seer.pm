@@ -2,3 +2,6 @@ node_modules
 build
 .svelte-kit
 .pnpm-debug.log
+.eslintrc.cjs
+.npmrc
+.prettierrc
