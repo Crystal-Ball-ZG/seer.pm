@@ -4,6 +4,8 @@ import UnoCss from '@unocss/vite';
 import { extractorSvelte } from '@unocss/core';
 import presetIcons from '@unocss/preset-icons';
 import presetUno from '@unocss/preset-uno';
+import presetWebFonts from '@unocss/preset-web-fonts'
+
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -24,6 +26,30 @@ const config = {
 							],
 							presets: [
 								presetUno(),
+								presetWebFonts({
+								      provider: 'google', // default provider
+								      fonts: {
+								        // these will extend the default theme
+								        sans: 'Roboto',
+								        mono: ['Fira Code', 'Fira Mono:400,700'],
+								        // custom ones
+								        grotesk:{ 
+									        name:'Space Grotesk',
+									       	weights: ['400', '700']
+								        },
+								        lato: [
+								          {
+								            name: 'Lato',
+								            weights: ['400', '700'],
+								            italic: true,
+								          },
+								          {
+								            name: 'sans-serif',
+								            provider: 'none',
+								          },
+								        ],
+								      },
+								    }),
 								presetIcons({
 									extraProperties: {
 										'display': 'inline-block',
