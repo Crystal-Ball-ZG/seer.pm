@@ -9,7 +9,7 @@
 				{name: 'Titles', href:'titles'},
 				{name: 'Resources', href:'resources'}
 			];
-	let title = {name:'The Zeitgeist Seer Program', href:'home', desc:'Eras are the vehicle of progression for the Seer Program as a whole.'};
+	let title = {name:'The Zeitgeist Seer Program', href:'/', desc:'Eras are the vehicle of progression for the Seer Program as a whole.'};
 </script>
 
 <svelte:head>
