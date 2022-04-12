@@ -18,7 +18,12 @@
 		},
 		{ name: 'Program Progress Report', href: 'progress', src: '', desc: '' },
 		{ name: 'Titles', href: 'titles', src: '', desc: 'Earn your title, earn your ZTG' },
-		{ name: 'Resources', href: 'resources', src: '', desc: 'Here you find official zeitgeist material' }
+		{
+			name: 'Resources',
+			href: 'resources',
+			src: '',
+			desc: 'Here you find official zeitgeist material'
+		}
 	];
 	let title = {
 		name: 'The Zeitgeist Seer Program',
@@ -42,14 +47,13 @@
 			<div class="absolute w-2/3 z-2">
 				<h2 class="text-6xl mb-4">{title.name}</h2>
 			</div>
-				<p class="w-1/2 text-xl absolute bottom-40">
-					{title.desc}
-				</p>
-				<button class="bg-#6236FF px-10 py-4 my-5 rounded-3xl absolute bottom-16">
-					<div class="i-mdi-alarm text-orange-400" />
-					<a href={title.href}>Continue</a>
-				</button>
-			
+			<p class="w-1/2 text-xl absolute bottom-40">
+				{title.desc}
+			</p>
+			<button class="bg-#6236FF px-10 py-4 my-5 rounded-3xl absolute bottom-16">
+				<div class="i-mdi-alarm text-orange-400" />
+				<a href={title.href}>Continue</a>
+			</button>
 		</div>
 		{#each pages as page}
 			<div class="border-1 border-#6236FF w-full h-118 rounded-3xl mb-8 p-16 relative">

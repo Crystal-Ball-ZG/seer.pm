@@ -17,9 +17,7 @@
 <svelte:head>
 	<title>Progress</title>
 </svelte:head>
-<div>
-
-</div>
+<div />
 
 <style>
 </style>

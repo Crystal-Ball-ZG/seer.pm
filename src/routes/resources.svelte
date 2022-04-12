@@ -17,9 +17,7 @@
 <svelte:head>
 	<title>Resources</title>
 </svelte:head>
-<div>
-
-</div>
+<div />
 
 <style>
 </style>

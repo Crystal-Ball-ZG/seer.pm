@@ -17,9 +17,7 @@
 <svelte:head>
 	<title>Eras</title>
 </svelte:head>
-<div>
-
-</div>
+<div />
 
 <style>
 </style>

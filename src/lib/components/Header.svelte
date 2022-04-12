@@ -32,8 +32,7 @@
 		<h1 class="text-lg font-600 block xl:hidden">seer.pm</h1>
 	</div>
 	<nav class="flex w-6/10 relative">
-		<label class="navigation-button md:hidden">
-		</label><!--todo mobile button-->
+		<label class="navigation-button md:hidden" /><!--todo mobile button-->
 		<ul class="hidden lg:flex flex-row font-bold list-none absolute right-0 top-2 items-center">
 			{#each pages as page}
 				<li class="md:mx-2 xl:mx-4">
