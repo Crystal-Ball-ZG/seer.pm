@@ -39,16 +39,17 @@
 			<div class="absolute top-40 right-0 z-1">
 				<img src={title.src} alt={title.name} />
 			</div>
-			<div class="w-2/3 z-2">
+			<div class="absolute w-2/3 z-2">
 				<h2 class="text-6xl mb-4">{title.name}</h2>
-				<p class="w-1/2 text-xl">
+			</div>
+				<p class="w-1/2 text-xl absolute bottom-40">
 					{title.desc}
 				</p>
-				<button class="bg-#6236FF px-10 py-4 my-5 w-16 rounded-3xl">
+				<button class="bg-#6236FF px-10 py-4 my-5 rounded-3xl absolute bottom-16">
 					<div class="i-mdi-alarm text-orange-400" />
 					<a href={title.href}>Continue</a>
 				</button>
-			</div>
+			
 		</div>
 		{#each pages as page}
 			<div class="border-1 border-#6236FF w-full h-118 rounded-3xl mb-4 p-16 relative">
