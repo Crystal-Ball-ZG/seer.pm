@@ -22,14 +22,16 @@
 					<p class="w-1/2 text-2xl">
 							Eras are the vehicle of progression for the Seer Program as a whole.
 					</p>
-					<button class="px-10 py-3 rounded-3xl bg-">
+					<div class="bg-#6236FF px-10 py-3 w-20 rounded-3xl">
 						Continue
-					</button>
+					</div>
 				</div>
 			</div>
 		</div>
-		<div class="bg-black w-full h-124 rounded-3xl px-16">
-		
+		<div class="bg-black w-full h-124 rounded-3xl">
+			<div class="px-16">
+
+			</div>
 		</div>
 	</div>
 </section>
