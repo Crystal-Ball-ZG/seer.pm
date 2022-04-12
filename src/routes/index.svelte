@@ -34,7 +34,7 @@
 <section class="mx-auto">
 	<div class="flex flex-col p-4">
 		<div
-			class="bg-gradient-to-bl to-#0100FE/70 from-#C000B0/90 w-full h-118 rounded-3xl mb-4 p-16 relative"
+			class="bg-gradient-to-bl to-#0100FE/70 from-#C000B0/90 w-full h-118 rounded-3xl mt-4 mb-8 p-16 relative"
 		>
 			<div class="absolute top-40 right-0 z-1">
 				<img src={title.src} alt={title.name} />
@@ -52,7 +52,7 @@
 			
 		</div>
 		{#each pages as page}
-			<div class="border-1 border-#6236FF w-full h-118 rounded-3xl mb-4 p-16 relative">
+			<div class="border-1 border-#6236FF w-full h-118 rounded-3xl mb-8 p-16 relative">
 				<div class="absolute right-0 top-40 z-1">
 					<img src={page.src} alt={page.name} />
 				</div>
@@ -62,7 +62,7 @@
 				<p class="w-1/2 text-xl absolute bottom-40">
 					{page.desc}
 				</p>
-				<button class="bg-#6236FF px-4 py-2 absolute bottom-16 rounded-3xl">
+				<button class="bg-#6236FF px-4 py-2 absolute bottom-16 rounded-3xl text-3xl">
 					<a href={page.href}>></a>
 				</button>
 			</div>
