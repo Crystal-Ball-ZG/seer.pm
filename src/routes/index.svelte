@@ -31,7 +31,7 @@
 	<title>{title.name}</title>
 </svelte:head>
 
-<section class="w-95/100 mx-auto">
+<section class="mx-auto">
 	<div class="flex flex-col p-4">
 		<div
 			class="bg-gradient-to-bl to-#0100FE/70 from-#C000B0/90 w-full h-118 rounded-3xl mb-4 p-16 relative"
@@ -57,13 +57,13 @@
 				</div>
 				<div class="w-2/3 z-2">
 					<h2 class="text-6xl mb-4">{page.name}</h2>
-					<p class="w-1/2 text-xl">
-						{page.desc}
-					</p>
-					<button class="bg-#6236FF w-1/10 px-10 py-3 rounded-3xl">
-						<a href={page.href}>Continue</a>
-					</button>
 				</div>
+				<p class="w-1/2 text-xl absolute bottom-40">
+					{page.desc}
+				</p>
+				<button class="bg-#6236FF px-4 py-2 absolute bottom-16 rounded-3xl">
+					<a href={page.href}>></a>
+				</button>
 			</div>
 		{/each}
 	</div>

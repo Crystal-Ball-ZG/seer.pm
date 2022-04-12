@@ -19,8 +19,8 @@
 	];
 </script>
 
-<div class="flex flex-1 w-full mt-8">
-	<div class="flex flex-row w-4/10">
+<div class="flex w-full my-8 px-8">
+	<div class="flex flex-row w-4/10 items-center">
 		<div class="mr-4">
 			<svg
 				width="50"
@@ -37,20 +37,19 @@
 				/>
 			</svg>
 		</div>
-		<h1 class="text-xl">The Zeitgeist Seer Program</h1>
+		<h1 class="text-xl font-600">The Zeitgeist Seer Program</h1>
 	</div>
-	<nav class="flex w-6/10">
-		<ul class="flex flex-row list-none">
+	<nav class="flex w-6/10 relative">
+		<ul class="flex flex-row font-bold list-none absolute right-0 top-2 items-center">
 			{#each pages as page}
-				<li class="m-1">
+				<li class="hidden md:flex md:mx-2 xl:mx-4">
 					<a href={page.href}>
 						{page.name}
 					</a>
 				</li>
 			{/each}
 			<li>
-				<a href="">
-					<!--TODO!-->
+				<a alt="search" href="/">
 					<svg
 						width="31"
 						height="32"
