@@ -35,7 +35,7 @@
 			</li>
 			{/each}
 			<li>
-				<a href="search"> <!--TODO!-->
+				<a href=""> <!--TODO!-->
 					<svg width="31" height="32" viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path d="M6.80244 18.1919C9.76413 21.1536 14.6078 21.1346 17.6212 18.1212C20.6345 15.1079 20.6536 10.2642 17.6919 7.3025C14.7302 4.34081 9.88652 4.35984 6.87315 7.37321C3.85978 10.3866 3.84075 15.2303 6.80244 18.1919Z" stroke="#6236FF" stroke-width="1.6"/>
 					<path d="M18.4696 18.9698L24.6922 25.1923" stroke="#6236FF" stroke-width="1.6" stroke-linecap="square"/>

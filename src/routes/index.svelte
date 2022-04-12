@@ -14,7 +14,7 @@
 		<div class="bg-gradient-to-bl to-#0100FE/70 from-#C000B0/90 w-full h-124 rounded-3xl my-5">
 			<div class="px-16 relative">
 				<div class="absolute right-16 top-40 z-1">
-					<img src="landing"/>
+					<img src=""/>
 					wtf
 				</div>
 				<div class="w-2/3 z-2">
