@@ -1,10 +1,15 @@
-<footer class="text-center lg:text-left bg-gray-100 text-gray-600">
+<script>
+  let now = new Date()
+  let year =now.getFullYear();
+</script>
+
+<footer class="text-center lg:text-left text-white">
   <div class="flex justify-center items-center lg:justify-between p-6 border-b border-gray-300">
     <div class="mr-12 hidden lg:block">
       <span>Get connected with us on social networks:</span>
     </div>
     <div class="flex justify-center">
-      <a href="#!" class="mr-6 text-gray-600">
+      <a href="#!" class="mr-6">
         <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f"
           class="w-2.5" role="img" xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 320 512">
@@ -13,7 +18,7 @@
           </path>
         </svg>
       </a>
-      <a href="#!" class="mr-6 text-gray-600">
+      <a href="#!" class="mr-6">
         <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter"
           class="w-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
           <path fill="currentColor"
@@ -21,7 +26,7 @@
           </path>
         </svg>
       </a>
-      <a href="#!" class="mr-6 text-gray-600">
+      <a href="#!" class="mr-6">
         <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="google"
           class="w-3.5" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512">
           <path fill="currentColor"
@@ -29,7 +34,7 @@
           </path>
         </svg>
       </a>
-      <a href="#!" class="mr-6 text-gray-600">
+      <a href="#!" class="mr-6">
         <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram"
           class="w-3.5" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
           <path fill="currentColor"
@@ -37,7 +42,7 @@
           </path>
         </svg>
       </a>
-      <a href="#!" class="mr-6 text-gray-600">
+      <a href="#!" class="mr-6">
         <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin-in"
           class="w-3.5" role="img" xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 448 512">
@@ -46,7 +51,7 @@
           </path>
         </svg>
       </a>
-      <a href="#!" class="text-gray-600">
+      <a href="#!" class="">
         <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github"
           class="w-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
           <path fill="currentColor"
@@ -87,16 +92,16 @@
           Products
         </h6>
         <p class="mb-4">
-          <a href="#!" class="text-gray-600">Angular</a>
+          <a href="#!" class="">Angular</a>
         </p>
         <p class="mb-4">
-          <a href="#!" class="text-gray-600">React</a>
+          <a href="#!" class="">React</a>
         </p>
         <p class="mb-4">
-          <a href="#!" class="text-gray-600">Vue</a>
+          <a href="#!" class="">Vue</a>
         </p>
         <p>
-          <a href="#!" class="text-gray-600">Laravel</a>
+          <a href="#!" class="">Laravel</a>
         </p>
       </div>
       <div class="">
@@ -104,16 +109,16 @@
           Useful links
         </h6>
         <p class="mb-4">
-          <a href="#!" class="text-gray-600">Pricing</a>
+          <a href="#!" class="">Pricing</a>
         </p>
         <p class="mb-4">
-          <a href="#!" class="text-gray-600">Settings</a>
+          <a href="#!" class="">Settings</a>
         </p>
         <p class="mb-4">
-          <a href="#!" class="text-gray-600">Orders</a>
+          <a href="#!" class="">Orders</a>
         </p>
         <p>
-          <a href="#!" class="text-gray-600">Help</a>
+          <a href="#!" class="">Help</a>
         </p>
       </div>
       <div class="">
@@ -162,8 +167,8 @@
       </div>
     </div>
   </div>
-  <div class="text-center p-6 bg-gray-200">
-    <span>© 2021 Copyright:</span>
-    <a class="text-gray-600 font-semibold" href="https://tailwind-elements.com/">Tailwind Elements</a>
+  <div class="text-center p-6">
+    <span>© {year} Copyright:</span>
+    <a class="text-white font-semibold" href="https://seer.pm/">Zeitgeist Seer</a>
   </div>
 </footer>
