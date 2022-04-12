@@ -11,21 +11,21 @@ cover: '/contribute/cover.webp'
 
 This article contains some basic operations to help you quickly get started with Zeitgeist Seer website development. We are using Urara-template that combines latest web technologies like Vite, Svelte and WindiCSS enabling rapid development.
 
-
 ## Prerequisites
 
 This template recommends using [pnpm](https://pnpm.io) and [@antfu/ni](https://github.com/antfu/ni).
 
-
 ### Install pnpm and ni using npm
+
 ```
 npm install -g pnpm
 npm i -g @antfu/ni
 ```
 
 ### Clone repo and install
+
 ```
-git clone git@github.com:Crystal-Ball-ZG/seer.git 
+git clone git@github.com:Crystal-Ball-ZG/seer.git
 cd seer
 ni
 ```
