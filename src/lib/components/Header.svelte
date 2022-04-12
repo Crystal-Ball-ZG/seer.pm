@@ -1,14 +1,5 @@
 <script>
-	import {
-		afterNavigate,
-		beforeNavigate,
-		disableScrollHandling,
-		goto,
-		invalidate,
-		prefetch,
-		prefetchRoutes
-	} from '$app/navigation';
-	import { base, assets } from '$app/paths';
+	import {} from 'svelte/animate';
 
 	let pages = [
 		{ name: 'Eras', href: 'eras' },
@@ -19,7 +10,7 @@
 	];
 </script>
 
-<div class="flex w-full my-8 px-8">
+<div class="flex w-full py-4 px-4 border-b-1 border-white">
 	<div class="flex flex-row w-4/10 items-center">
 		<div class="mr-4">
 			<svg
@@ -37,12 +28,15 @@
 				/>
 			</svg>
 		</div>
-		<h1 class="text-xl font-600">The Zeitgeist Seer Program</h1>
+		<h1 class="text-xl font-600 hidden xl:block">The Zeitgeist Seer Program</h1>
+		<h1 class="text-lg font-600 block xl:hidden">seer.pm</h1>
 	</div>
 	<nav class="flex w-6/10 relative">
-		<ul class="flex flex-row font-bold list-none absolute right-0 top-2 items-center">
+		<label class="navigation-button md:hidden">
+		</label><!--todo mobile button-->
+		<ul class="hidden lg:flex flex-row font-bold list-none absolute right-0 top-2 items-center">
 			{#each pages as page}
-				<li class="hidden md:flex md:mx-2 xl:mx-4">
+				<li class="md:mx-2 xl:mx-4">
 					<a href={page.href}>
 						{page.name}
 					</a>
