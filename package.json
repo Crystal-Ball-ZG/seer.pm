@@ -4,7 +4,7 @@
 	"scripts": {
 		"dev": "svelte-kit dev",
 		"build": "svelte-kit build",
-		"start": "pm2-runtime start ecosystem.config.js --env production",
+		"start": "git pull && svelte-kit build && sudo systemctl restart seer",
 		"package": "svelte-kit package",
 		"preview": "svelte-kit preview",
 		"prepare": "svelte-kit sync",
