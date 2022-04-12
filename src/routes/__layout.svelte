@@ -1,4 +1,5 @@
 <script lang="ts">
+	import '@unocss/reset/normalize.css'
 	import 'uno.css';
 	
 	import Header from '$lib/components/Header.svelte';
