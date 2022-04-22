@@ -7,7 +7,7 @@
 	import heroimg from '$lib/assets/images/3d_icons/discoball.png';
 	import erasimg from '$lib/assets/images/3d_icons/3Dtriangle.png';
 	import eventsimg from '$lib/assets/images/3d_icons/waveball.png';
-	import progressimg from '$lib/assets/images/3d_icons/stickball.png';
+	import progressimg from '$lib/assets/images/3d_icons/ballsticks.png';
 	import titlesimg from '$lib/assets/images/3d_icons/roundstar.png';
 	import resourcesimg from '$lib/assets/images/3d_icons/hexacubicon.png';
 	
