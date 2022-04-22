@@ -58,34 +58,34 @@
 <section class="mx-auto">
 	<div class="flex flex-col p-2">
 		<div
-			class="bg-gradient-to-bl to-#0100FE/90 from-#C000B0/95 w-full h-118 rounded-3xl mt-4 mb-8 p-16 relative"
+			class="bg-gradient-to-bl to-#0100FE/90 from-#C000B0/95 w-full h-118 rounded-3xl mt-4 mb-8 p-8 md:p-12 relative"
 		>
 			<div class="absolute right-0 z-1">
-				<img class="w-2/3 float-right mr-10 opacity-95" src={hero.img} alt={hero.name} />
+				<img class="w-2/3 float-right sm:mr-5 lg:mr-10 opacity-85 md:opacity-95" src={hero.img} alt={hero.name} />
 			</div>
-			<div class="absolute w-2/3 z-2">
-				<h2 class="text-6xl mb-4">{hero.name}</h2>
+			<div class="w-2/3 z-20">
+				<h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-4">{hero.name}</h2>
 			</div>
-			<p class="w-1/2 text-xl absolute bottom-40 z-2">
+			<p class="w-1/2 text-lg md:text-xl absolute bottom-32 md:bottom-40 z-2">
 				{hero.desc}
 			</p>
-			<button class="bg-#6236FF px-10 py-4 my-5 rounded-3xl absolute bottom-16 z-2">
+			<button class="bg-#6236FF/80 hover:bg-#6236FF px-6 md:px-10 py-3 md:py-4 md:my-5 rounded-3xl absolute bottom-8 md:bottom-12 z-2">
 				<div class="i-mdi-alarm text-orange-400" />
 				<a href={hero.href}>Continue</a>
 			</button>
 		</div>
 		{#each pages as page}
-			<div class="border-1 border-#6236FF w-full h-118 rounded-3xl mb-8 p-16 relative">
+			<div class="border-1 border-#6236FF w-full h-118 rounded-3xl mb-8 p-10 md:p-12 relative">
 				<div class="absolute right-0 z-1">
-					<img class="w-2/3 float-right mr-10 opacity-95" src={page.img} alt={page.name} />
+					<img class="w-2/3 float-right sm:mr-5 lg:mr-10 opacity-85 md:opacity-95" src={page.img} alt={page.name} />
 				</div>
 				<div class="w-2/3 z-2">
-					<h2 class="text-6xl mb-4">{page.name}</h2>
+					<h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-4">{page.name}</h2>
 				</div>
-				<p class="w-1/2 z-2 text-xl absolute bottom-40">
+				<p class="w-1/2 text-lg md:text-xl absolute bottom-32 md:bottom-40 z-2">
 					{page.desc}
 				</p>
-				<button class="bg-#6236FF px-4 py-2 absolute bottom-16 rounded-3xl text-3xl z-2">
+				<button class="bg-#6236FF/80 hover:bg-#6236FF px-4 py-2 md:px-6 md:py-3 absolute bottom-10 md:bottom-12 rounded-3xl text-3xl z-2">
 					<a href={page.href}>></a>
 				</button>
 			</div>
