@@ -3,43 +3,51 @@
 </script>
 
 <script lang="ts">
+
+	import heroimg from '$lib/assets/images/3d_icons/discoball.png';
+	import erasimg from '$lib/assets/images/3d_icons/3Dtriangle.png';
+	import eventsimg from '$lib/assets/images/3d_icons/waveball.png';
+	import progressimg from '$lib/assets/images/3d_icons/stickball.png';
+	import titlesimg from '$lib/assets/images/3d_icons/roundstar.png';
+	import resourcesimg from '$lib/assets/images/3d_icons/hexacubicon.png';
+	
 	let pages = [
 		{
 			name: 'Eras',
 			href: 'eras',
-			src: '',
+			src: 'erasimg',
 			desc: 'Eras are the vehicle of progression for the Seer Program as a whole.'
 		},
 		{
 			name: 'Events',
 			href: 'events',
-			src: '',
 			desc: 'Stay up to date where and when things happen.'
 		},
-		{ name: 'Program Progress Report', href: 'progress', src: '$lib/assets/images/', desc: '' },
+		{ 
+			name: 'Program Progress Report',
+		  href: 'progress',
+		  desc: '' 
+		},
 		{
 			name: 'Titles',
 			href: 'titles',
-			src: '$lib/assets/images/',
 			desc: 'Earn your title, earn your ZTG'
 		},
 		{
 			name: 'Resources',
 			href: 'resources',
-			src: '$lib/assets/images/',
 			desc: 'Here you find official zeitgeist material'
 		}
 	];
-	let title = {
+	let hero = {
 		name: 'The Zeitgeist Seer Program',
 		href: '/',
-		src: '$lib/assets/images/discoball.png',
 		desc: 'Eras are the vehicle of progression for the Seer Program as a whole.'
 	};
 </script>
 
 <svelte:head>
-	<title>{title.name}</title>
+	<title>{hero.name}</title>
 </svelte:head>
 
 <section class="mx-auto">
@@ -48,17 +56,17 @@
 			class="bg-gradient-to-bl to-#0100FE/70 from-#C000B0/90 w-full h-118 rounded-3xl mt-4 mb-8 p-16 relative"
 		>
 			<div class="absolute top-40 right-0 z-1">
-				<img src={title.src} alt={title.name} />
+				<img src={heroimg} alt={hero.name} />
 			</div>
 			<div class="absolute w-2/3 z-2">
-				<h2 class="text-6xl mb-4">{title.name}</h2>
+				<h2 class="text-6xl mb-4">{hero.name}</h2>
 			</div>
 			<p class="w-1/2 text-xl absolute bottom-40">
-				{title.desc}
+				{hero.desc}
 			</p>
 			<button class="bg-#6236FF px-10 py-4 my-5 rounded-3xl absolute bottom-16">
 				<div class="i-mdi-alarm text-orange-400" />
-				<a href={title.href}>Continue</a>
+				<a href={hero.href}>Continue</a>
 			</button>
 		</div>
 		{#each pages as page}
