@@ -16,19 +16,24 @@
 			src: '',
 			desc: 'Stay up to date where and when things happen.'
 		},
-		{ name: 'Program Progress Report', href: 'progress', src: '', desc: '' },
-		{ name: 'Titles', href: 'titles', src: '', desc: 'Earn your title, earn your ZTG' },
+		{ name: 'Program Progress Report', href: 'progress', src: '$lib/assets/images/', desc: '' },
+		{
+			name: 'Titles',
+			href: 'titles',
+			src: '$lib/assets/images/',
+			desc: 'Earn your title, earn your ZTG'
+		},
 		{
 			name: 'Resources',
 			href: 'resources',
-			src: '',
+			src: '$lib/assets/images/',
 			desc: 'Here you find official zeitgeist material'
 		}
 	];
 	let title = {
 		name: 'The Zeitgeist Seer Program',
 		href: '/',
-		src: 'assets/images/discoball.png',
+		src: '$lib/assets/images/discoball.png',
 		desc: 'Eras are the vehicle of progression for the Seer Program as a whole.'
 	};
 </script>
