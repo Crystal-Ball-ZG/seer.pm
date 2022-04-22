@@ -56,9 +56,9 @@
 </svelte:head>
 
 <section class="mx-auto">
-	<div class="flex flex-col p-4">
+	<div class="flex flex-col p-2">
 		<div
-			class="bg-gradient-to-bl to-#0100FE/70 from-#C000B0/90 w-full h-118 rounded-3xl mt-4 mb-8 p-16 relative"
+			class="bg-gradient-to-bl to-#0100FE/90 from-#C000B0/95 w-full h-118 rounded-3xl mt-4 mb-8 p-16 relative"
 		>
 			<div class="absolute right-0 z-1">
 				<img class="w-2/3 float-right mr-10 opacity-95" src={hero.img} alt={hero.name} />

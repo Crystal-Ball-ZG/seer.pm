@@ -7,7 +7,7 @@
 </script>
 
 <body class="bg-#1A1A1A text-white w-screen">
-	<div class="container lg:w-7/10 mx-auto">
+	<div class="container w-95/100 md:w-85/100 lg:w-75/100 xl:w-65/100 mx-auto">
 		<Header />
 		<main>
 			<slot />

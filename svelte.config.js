@@ -31,7 +31,7 @@ const config = {
 								// these will extend the default theme
 								sans: 'Roboto',
 								mono: ['Fira Code', 'Fira Mono:400,700'],
-								// custom ones
+								// custom ones						
 								grotesk: {
 									name: 'Space Grotesk',
 									weights: ['400', '700']
