@@ -55,16 +55,16 @@
 		<div
 			class="bg-gradient-to-bl to-#0100FE/70 from-#C000B0/90 w-full h-118 rounded-3xl mt-4 mb-8 p-16 relative"
 		>
-			<div class="absolute top-40 right-0 z-1">
-				<img src={heroimg} alt={hero.name} />
+			<div class="absolute right-0 z-1">
+				<img class="w-2/3 float-right mr-10 opacity-90" src={heroimg} alt={hero.name} />
 			</div>
 			<div class="absolute w-2/3 z-2">
 				<h2 class="text-6xl mb-4">{hero.name}</h2>
 			</div>
-			<p class="w-1/2 text-xl absolute bottom-40">
+			<p class="w-1/2 text-xl absolute bottom-40 z-2">
 				{hero.desc}
 			</p>
-			<button class="bg-#6236FF px-10 py-4 my-5 rounded-3xl absolute bottom-16">
+			<button class="bg-#6236FF px-10 py-4 my-5 rounded-3xl absolute bottom-16 z-2">
 				<div class="i-mdi-alarm text-orange-400" />
 				<a href={hero.href}>Continue</a>
 			</button>
