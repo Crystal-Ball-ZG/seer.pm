@@ -15,7 +15,6 @@
 		{
 			name: 'Eras',
 			href: 'eras',
-			src: 'erasimg',
 			desc: 'Eras are the vehicle of progression for the Seer Program as a whole.'
 		},
 		{
@@ -72,7 +71,7 @@
 		{#each pages as page}
 			<div class="border-1 border-#6236FF w-full h-118 rounded-3xl mb-8 p-16 relative">
 				<div class="absolute right-0 top-40 z-1">
-					<img src={page.src} alt={page.name} />
+					<img src={erasimg} alt={page.name} />
 				</div>
 				<div class="w-2/3 z-2">
 					<h2 class="text-6xl mb-4">{page.name}</h2>
