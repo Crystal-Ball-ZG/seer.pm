@@ -23,14 +23,25 @@ const config = {
 						{ landbox: 'w-full h-124 rounded-3xl px-16' },
 						{ redbox: 'px-10 py-5 bg-red' }
 					],
-					presets: [
+					presets: 
+					[
 						presetUno(),
+						
+						presetIcons({
+							
+							extraProperties: {
+							'display': 'inline-block',
+					    'vertical-align': 'middle',
+							}
+						}),
+						
 						presetWebFonts({
 							provider: 'google', // default provider
 							fonts: {
 								// these will extend the default theme
 								sans: 'Roboto',
 								mono: ['Fira Code', 'Fira Mono:400,700'],
+								kanit: 'Kanit:400,700',
 								// custom ones						
 								grotesk: {
 									name: 'Space Grotesk',
@@ -48,13 +59,8 @@ const config = {
 									}
 								]
 							}
-						}),
-						presetIcons({
-							extraProperties: {
-								display: 'inline-block',
-								'vertical-align': 'middle'
-							}
 						})
+						
 					]
 				})
 			]
