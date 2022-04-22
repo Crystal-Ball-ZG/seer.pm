@@ -31,7 +31,7 @@
 	})
 </script>
 
-<div class="flex w-full py-4 px-4 border-b-1 border-white">
+<div class="flex w-full py-4 px-4 border-b-1 md:border-0 border-white">
 	<div class="flex flex-row sm:w-full lg:w-35/100 w-35/100  items-center">
 		<div class="mr-4">
 			<svg
