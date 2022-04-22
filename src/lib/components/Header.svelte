@@ -1,17 +1,38 @@
 <script>
+	import { onMount } from 'svelte';
 	import {} from 'svelte/animate';
 
-	let pages = [
+	let showMobileMenu = false;
+
+	let navItems = [
 		{ name: 'Eras', href: 'eras' },
 		{ name: 'Events', href: 'events' },
 		{ name: 'Program Progress Report', href: 'progress' },
 		{ name: 'Titles', href: 'titles' },
 		{ name: 'Resources', href: 'resources' }
 	];
+
+	// Mobile menu click event handler
+	const handleMobileIconClick = () => (showMobileMenu = !showMobileMenu);
+
+	// Media match query handler
+	const mediaQueryHandler = e => {
+		// Reset mobile state
+		if (!e.matches) {
+			showMobileMenu = false;
+		}
+	};
+
+	// Attach media query listener on mount hook
+	onMount(() => {
+		const mediaListener = window.matchMedia("(max-width:767px)");
+
+		mediaListener.addListener(mediaQueryHandler);
+	})
 </script>
 
 <div class="flex w-full py-4 px-4 border-b-1 border-white">
-	<div class="flex flex-row w-4/10 items-center">
+	<div class="flex flex-row sm:w-full lg:w-35/100 w-35/100  items-center">
 		<div class="mr-4">
 			<svg
 				width="50"
@@ -28,20 +49,21 @@
 				/>
 			</svg>
 		</div>
-		<h1 class="text-xl font-600 hidden xl:block">The Zeitgeist Seer Program</h1>
-		<h1 class="text-lg font-600 block xl:hidden">seer.pm</h1>
+		<h1 class="text-lg xl:text-xl font-600 hidden sm:block lg:hidden xl:block">The Zeitgeist Seer Program</h1>
+		<h1 class="text-lg xl:text-xl font-600 block sm:hidden lg:block xl:hidden">seer.pm</h1>
 	</div>
-	<nav class="flex w-6/10 relative">
-		<label class="navigation-button md:hidden" /><!--todo mobile button-->
-		<ul class="hidden lg:flex flex-row font-bold list-none absolute right-0 top-2 items-center">
-			{#each pages as page}
+	<nav class="flex w-65/100 sm:w-full lg:w-65/100 relative justify-end">
+		<ul class="hidden lg:flex flex-row font-bold list-none items-center">
+			{#each navItems as page}
 				<li class="md:mx-2 xl:mx-4">
 					<a href={page.href}>
 						{page.name}
 					</a>
 				</li>
 			{/each}
-			<li>
+		</ul>
+		<ul class="flex flex-row">
+			<li class="mr-2">
 				<a alt="search" href="/">
 					<svg
 						width="31"
@@ -63,7 +85,21 @@
 						/>
 					</svg>
 				</a>
+			</li>		
+			<li>
+				<div on:click={handleMobileIconClick} class="md:hidden {`mobile-icon${showMobileMenu} ? ' active' : ''}`}">
+					<div class="middle-line">menu</div>
+				</div>
 			</li>
+		</ul>
+		<ul class="hidden {`navbar-list$showMobileMenu ? ' mobile' : ''}`}">
+			{#each navItems as page}
+				<li>
+					<a href={page.href}>
+						{page.name}
+					</a>
+				</li>
+			{/each}
 		</ul>
 	</nav>
 </div>
