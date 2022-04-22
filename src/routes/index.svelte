@@ -28,6 +28,7 @@
 	let title = {
 		name: 'The Zeitgeist Seer Program',
 		href: '/',
+		src: 'assets/images/discoball.png',
 		desc: 'Eras are the vehicle of progression for the Seer Program as a whole.'
 	};
 </script>
