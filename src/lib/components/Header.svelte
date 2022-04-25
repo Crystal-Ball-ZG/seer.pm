@@ -63,13 +63,14 @@
 			</ul>
 		</nav>
 	</div>
-			<ul hidden={!showMobileMenu} class="w-full lg:hidden">
+			<ul hidden={!showMobileMenu} class="w-full lg:hidden p-4">
 			{#each navItems as page}
-				<li class="p-2 w-full hover:bg-white hover:text-black">
-					<a href={page.href}>
-						{page.name}
-					</a>
-				</li>
+				<a href={page.href}>
+					<li class="p-2 w-full hover:bg-white hover:text-black">	
+							{page.name}
+						
+					</li>
+				</a>
 			{/each}
 		</ul>
 </div>
