@@ -63,7 +63,7 @@
 			<div class="absolute right-0 z-1">
 				<img class="w-55/100 mt-10 sm:mt-0 md:w-2/3 float-right sm:mr-5 lg:mr-10 opacity-85 md:opacity-95" src={hero.img} alt={hero.name} />
 			</div>
-			<div class="absolute z-2 w-2/3">
+			<div class="absolute z-2 w-60/100">
 				<h2 class="font-grotesk font-bold text-4xl md:text-5xl lg:text-6xl xl:text-7xl mb-4">{hero.name}</h2>
 			</div>
 			<p class="font-lato absolute w-1/2 text-lg md:text-xl bottom-32 md:bottom-40 z-2">
@@ -79,7 +79,7 @@
 				<div class="absolute right-0 z-1">
 					<img class="w-55/100 mt-10 sm:mt-0 md:w-2/3 float-right sm:mr-5 lg:mr-10 opacity-85 md:opacity-95" src={page.img} alt={page.name} />
 				</div>
-				<div class="absolute z-2 w-2/3">
+				<div class="absolute z-2 w-60/100">
 					<h2 class="font-grotesk font-bold text-4xl md:text-5xl lg:text-6xl xl:text-7xl mb-4">{page.name}</h2>
 				</div>
 				<p class="font-lato absolute w-35/100 md:w-1/2 text-lg md:text-xl bottom-32 md:bottom-40 z-2">
