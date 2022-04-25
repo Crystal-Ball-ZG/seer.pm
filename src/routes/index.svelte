@@ -69,7 +69,7 @@
 			<p class="font-lato absolute w-1/2 text-lg md:text-xl bottom-32 md:bottom-40 z-2">
 				{hero.desc}
 			</p>
-			<button class="font-grotesk bg-#6236FF/80 hover:bg-#6236FF pr-6 pl-4 md:pl-6 md:pr-10 py-3 md:py-4 md:my-5 rounded-3xl absolute bottom-8 md:bottom-12 z-2">
+			<button class="font-grotesk bg-#6236FF/80 hover:bg-#6236FF hover:animate-swing pr-6 pl-4 md:pl-6 md:pr-10 py-3 md:py-4 md:my-5 rounded-3xl absolute bottom-8 md:bottom-12 z-2">
 				<div class="text-white md:text-2xl text-xl i-mdi-arrow mr-2"/>
 				<a href={hero.href} class="text-md md:text-lg">Continue</a>
 			</button>
