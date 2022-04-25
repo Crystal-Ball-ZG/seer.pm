@@ -12,7 +12,7 @@
 	];
 </script>
 
-<div class="flex flex-wrap w-full border-b-1 md:border-0 border-white">
+<div class="flex flex-wrap w-full border-b-1 md:border-0 border-white mb-8">
 	<div class="flex w-full p-2 lg:p-4">
 		<div class="flex flex-row sm:w-1/2 lg:w-35/100 w-35/100 items-center">
 			

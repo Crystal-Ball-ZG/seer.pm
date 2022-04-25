@@ -69,10 +69,12 @@
 			<p class="font-lato absolute w-1/2 text-md md:text-lg md:text-xl bottom-32 md:bottom-40 z-2">
 				{hero.desc}
 			</p>
-			<button class="font-grotesk bg-#6236FF/80 hover:bg-#6236FF hover:animate-swing pr-6 pl-4 md:pl-6 md:pr-10 py-3 md:py-4 md:my-5 rounded-3xl absolute bottom-8 md:bottom-12 z-2">
-				<div class="text-white md:text-2xl text-xl i-mdi-arrow mr-2"/>
-				<a href={hero.href} class="text-md md:text-lg">Continue</a>
-			</button>
+			<a href={hero.href} class="text-md md:text-lg">
+				<button class="font-grotesk bg-#6236FF/80 hover:bg-#6236FF hover:animate-swing pr-6 pl-4 md:pl-6 md:pr-10 py-3 md:py-4 md:my-5 rounded-3xl absolute bottom-8 md:bottom-12 z-2">
+					<div class="text-white md:text-2xl text-xl i-mdi-arrow mr-2"/>
+					Continue
+				</button>
+			</a>
 		</div>
 		{#each pages as page}
 			<div class="border-1 border-#6236FF w-full h-100 md:h-118 rounded-3xl mb-8 p-10 md:p-12 relative">
