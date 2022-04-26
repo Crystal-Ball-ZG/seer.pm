@@ -6,7 +6,7 @@
 	let navItems = [
 		{ name: 'Eras', href: 'eras' },
 		{ name: 'Events', href: 'events' },
-		{ name: 'Program Progress Report', href: 'progress' },
+		{ name: 'Progress', href: 'progress' },
 		{ name: 'Titles', href: 'titles' },
 		{ name: 'Resources', href: 'resources' }
 	];
@@ -50,18 +50,26 @@
 				{/each}
 			</ul>
 			<ul class="flex flex-row">
-				<li>
-					<a alt="search" href="#">
-						<div class="i-ant-design-search-outlined text-4xl sm:text-5xl hover:text-#6236FF text-white hover:animate-swing"></div>
+				<li class="mt-1">
+					<a alt="search" href="">
+						<div class="i-ant-design-search-outlined text-3xl md:text-4xl hover:text-#6236FF text-white hover:animate-swing"></div>
 					</a>
 				</li>		
-				<li class="ml-2">
+				<li class="ml-1 mt-1">
 					<div on:click={()=> showMobileMenu = !showMobileMenu}  class="lg:hidden">
-						<div class="i-gg-menu-hotdog text-4xl sm:text-5xl text-white hover:text-#6236FF hover:animate-flip"></div>
+						<div class="i-gg-menu-hotdog text-4xl md:text-4xl text-white hover:text-#6236FF hover:animate-flip"></div>
 					</div>
 				</li>
 			</ul>
 		</nav>
+	</div>
+	<div class="w-full bg-#6236FF h-10 mx-2 lg:mx-4">
+		<div class="flex float-right mr-2 md:mr-4 my-2">
+		<!--{#if } loggedin === false-->
+			<span class="i-uiw-login text-2xl"/>
+		<!--else -->
+			<span class="i-iconoir:profile-circled text-2xl"/>
+		</div>
 	</div>
 			<ul hidden={!showMobileMenu} class="w-full lg:hidden p-4">
 			{#each navItems as page}
