@@ -42,16 +42,16 @@
 		<nav class="mt-2 md:mt-0 flex w-65/100 sm:w-1/2 lg:w-65/100 relative justify-end">
 			<ul class="hidden lg:flex flex-row font-bold list-none items-center">
 				{#each navItems as page}
+				<a href={page.href}>
 					<li class="md:mx-2 xl:mx-4 hover:text-#6236FF">
-						<a href={page.href}>
-							{page.name}
-						</a>
+							{page.name}	
 					</li>
+				</a>
 				{/each}
 			</ul>
 			<ul class="flex flex-row">
 				<li>
-					<a alt="search" href="/">
+					<a alt="search" href="#">
 						<div class="i-ant-design-search-outlined text-4xl sm:text-5xl hover:text-#6236FF text-white hover:animate-swing"></div>
 					</a>
 				</li>		
@@ -67,8 +67,7 @@
 			{#each navItems as page}
 				<a href={page.href}>
 					<li class="p-2 w-full hover:bg-white hover:text-black">	
-							{page.name}
-						
+							{page.name}					
 					</li>
 				</a>
 			{/each}
