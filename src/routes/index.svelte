@@ -87,9 +87,11 @@
 				<p class="font-lato absolute w-35/100 md:w-1/2 text-md md:text-lg md:text-xl bottom-32 md:bottom-40 z-2">
 					{page.desc}
 				</p>
-				<button class="font-grotesk bg-#6236FF/80 hover:bg-#6236FF hover:animate-swing hover:animate-1s px-3 py-2 pb-3 md:px-4 md:py-3 md:pb-4 absolute bottom-8 md:bottom-12 rounded-3xl text-3xl z-2">
-					<a href={page.href} class="i-akar-icons-arrow-up-right"></a>
-				</button>
+				<a href="{page.href}">
+					<button class="font-grotesk bg-#6236FF/80 hover:bg-#6236FF hover:animate-swing hover:animate-1s px-3 py-2 pb-3 md:px-4 md:py-3 md:pb-4 absolute bottom-8 md:bottom-12 rounded-3xl text-3xl z-2">
+						<i class="i-akar-icons-arrow-up-right"/>
+					</button>
+				</a>
 			</div>
 		{/each}
 	</div>
