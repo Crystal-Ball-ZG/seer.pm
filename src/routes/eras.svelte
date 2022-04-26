@@ -12,38 +12,39 @@
 			h4_2: 'How It Works', 
 			p_5: "The Seer program is designed with two major avenues of progression: Titles and Eras.  Built for adaptability and encouraging collaboration towards common goals, Titles and Eras are tangible sources of progression for Seers and the program itself. The evolution of the program will eventually be guided by the principles of Futarchy as Zeitgeist matures.",
 		}
-	let eras = [
-		discovery = {
+	/*let eras = [
+		discovery: {
 			title: 'Discovery Era',
 			p_1: '',
 			p_2: '',
 			p_3: '',
 	},
-		industrial = {
+		industrial: {
 			title: 'Industrial Era',
 			p_1: 'text',
 			p_2: 'tex2',
 			p_3: 'text3',
 	},
-	 	commerce = {
+	 	commerce: {
 			title: 'Commerce Era',
 			p_1: 'text1',
 			p_2: 'text2',
 			p_3: 'text3'
 	},
-		republic = {
+		republic: {
 			title: 'Republic Era',
 			p_1: 'Republic Era',
 			p_2: 'Republic Era',
 			p_3: 'Republic Era',
 		},
-		realization ={
+		realization: {
 			title: 'Realization Era',
 			p_1: 'Realization Era',
 			p_2: 'Realization Era',
 			p_3: 'Realization Era',
 		}
 	]
+	*/
 </script>
 <script context="module">
 	import { browser, dev } from '$app/env';
@@ -108,14 +109,16 @@
 			{page.h4_1}
 		</h4>
 		<div class="flex flex-col">
-			<div>{eras.h5_1}</div>
+			<div>
+				roll eras here
+			</div>
 		</div>
 		<h5 class="color-#6236FF font-bold text-2xl md:text-3xl">
-			{eras.h5_1}
+				roll eras here
 		</h5>
 		<div class="h-100 bg-blue rounded-3xl">
 		</div>
-		<p>
+		<!--p>
 			{page.discovery.p_1}
 		</p>
 		<p>
@@ -123,7 +126,7 @@
 		</p>
 		<p>
 			{page.discovery.p_3}
-		</p>
+		</p-->
 	</div>
 </div>
 
