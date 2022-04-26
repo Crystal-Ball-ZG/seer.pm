@@ -13,6 +13,9 @@
 			p_5: 'Eras are the vehicle of progression for the Seer Program as a whole. Each Era lasts a limited time and has its own area of focus, or "zeitgeist", that drives the activity and growth of the ecosystem in a targeted and progressive manner.',
 			h5_2: 'Titles',
 			p_6: 'Titles are designed to distinguish members of the program who have made active contributions to the Zeitgeist ecosystem and act as a source of prestige for those members. Titles also unlock various perks throughout the duration of the program including exclusive NFT rewards.',
+			h4_3: 'Get Involved',
+			P_7: 'Does the idea of building the future of blockchain appeal to you? If you are interested in creating prediction markets, building prediction market based apps, blockchain development, community co-ordination, or anything else that you think would contribute to the growth of the Zeitgeist ecosystem, then the Seer Program is the best place to get started.',
+			P_8: 'The Seer Program community will be a place where collaboration and networking are the keys to success. That success can bring numerous benefits along with it: Participants will have first or exclusive access to various opportunities and events throughout the program, a stepping stone for a career in blockchain, and belong to a community that they can be proud of.'
 		}
 </script>
 <script context="module">
@@ -96,16 +99,15 @@
 			{page.p_6}
 		</p>
 		<h4 class="color-#6236FF font-bold text-4xl md:text-5xl">
-			Get Involved
+			{page.h4_3}
 		</h4>
 		<p>
-			Does the idea of building the future of blockchain appeal to you? If you are interested in creating prediction markets, building prediction market based apps, blockchain development, community co-ordination, or anything else that you think would contribute to the growth of the Zeitgeist ecosystem, then the Seer Program is the best place to get started."
+			{page.p_7}
 		</p>
 		<p>
-			The Seer Program community will be a place where collaboration and networking are the keys to success. That success can bring numerous benefits along with it: Participants will have first or exclusive access to various opportunities and events throughout the program, a stepping stone for a career in blockchain, and belong to a community that they can be proud of.
+			{page.p_8}
 		</p>
 	</div>
-	
 </div>
 
 <style>
