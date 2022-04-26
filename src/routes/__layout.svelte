@@ -4,6 +4,8 @@
 
 	import Header from '$lib/components/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
+	import { supabase } from "../supabase.js";
+	console.log(supabase);
 </script>
 
 <body class="bg-#1A1A1A text-white">
