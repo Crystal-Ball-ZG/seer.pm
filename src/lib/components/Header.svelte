@@ -1,7 +1,9 @@
 <script>
 	import { fade } from 'svelte/transition';
 
+
 	let showMobileMenu = false;
+	let showSearchBar = false;
 
 	let navItems = [
 		{ name: 'Eras', href: 'eras' },
@@ -10,15 +12,20 @@
 		{ name: 'Titles', href: 'titles' },
 		{ name: 'Resources', href: 'resources' }
 	];
+
+	
+	//var input = document.getElementById('search');
+	//input.focus();
+	//input.select();
+	
 </script>
 
-<div class="flex flex-wrap w-full border-b-1 md:border-0 border-white mb-8">
-	<div class="flex w-full p-2 lg:p-4">
+<div class="flex flex-wrap w-full border-b-1 md:border-0 border-white mb-4">
+	<div class="flex w-full h-18 lg:h-20 px-2 md:px-4">
 		<div class="flex flex-row sm:w-1/2 lg:w-35/100 w-35/100 items-center">
-			
-			<div class="mx-2 mr-4">
+			<div class="mr-4">
 				<a href="/">
-					<svg
+					<svg class="w-10 h-10 md:w-12 md:w-12"
 						width="50"
 						height="50"
 						viewBox="0 0 50 50"
@@ -35,35 +42,39 @@
 					</a>
 				</div>
 				<a href="/">
-				<h1 class="text-lg xl:text-xl font-600 hidden sm:block lg:hidden xl:block">The Zeitgeist Seer Program</h1>
 				<h1 class="text-lg xl:text-xl font-600 block sm:hidden lg:block xl:hidden">seer.pm</h1>
 			</a>
 		</div>
-		<nav class="mt-2 md:mt-0 flex w-65/100 sm:w-1/2 lg:w-65/100 relative justify-end">
-			<ul class="hidden lg:flex flex-row font-bold list-none items-center">
-				{#each navItems as page}
-				<a href={page.href}>
-					<li class="md:mx-2 xl:mx-4 hover:text-#6236FF">
-							{page.name}	
-					</li>
-				</a>
-				{/each}
-			</ul>
-			<ul class="flex flex-row">
-				<li class="mt-1">
-					<a alt="search" href="">
-						<div class="i-ant-design-search-outlined text-3xl md:text-4xl hover:text-#6236FF text-white hover:animate-swing"></div>
+		<nav class="flex w-65/100 sm:w-1/2 lg:w-65/100 relative justify-between">
+			<div class="items-center relative my-auto">
+				<ul class="hidden lg:flex flex-row font-bold list-none items-center">
+					{#each navItems as page} <!-- TODO: create navi-items as boxes that  -->
+					<a href={page.href}>
+						<li class="md:mx-2 xl:mx-4 hover:text-#6236FF">
+								{page.name}	
+						</li>
 					</a>
-				</li>		
-				<li class="ml-1 mt-1">
-					<div on:click={()=> showMobileMenu = !showMobileMenu}  class="lg:hidden">
-						<div class="i-gg-menu-hotdog text-4xl md:text-4xl text-white hover:text-#6236FF hover:animate-flip"></div>
-					</div>
-				</li>
-			</ul>
+					{/each}
+				</ul>
+			</div>
+			<div class="flex flex-row my-auto">
+			<div hidden={!showSearchBar} class="min-w-50 rounded-xl h-9 -mr-8 lg:-mr-10 px-4 pr-10 py-1 bg-white text-#6236FF">
+				<form>
+					<input type="text" id="search" name="search" placeholder="Search..." class="h-7">
+				</form>
+			</div>
+				<div class="mt-1 md:mt=0 mr-3">
+					<div on:click={()=> showSearchBar = !showSearchBar} >	
+					<div class="i-ant-design-search-outlined text-3xl md:text-4xl text-#6236FF hover:animate-swing"></div>
+				 </div>			
+				</div>			
+				<div on:click={()=> showMobileMenu = !showMobileMenu}  class="lg:hidden">
+					<div class="i-gg-menu-hotdog text-4xl md:text-4xl text-white hover:text-#6236FF hover:animate-flip"></div>
+				</div>
+			</div>
 		</nav>
 	</div>
-	<div class="w-full bg-#6236FF h-10 mx-2 lg:mx-4">
+	<div class="w-full bg-#6236FF h-12 px-2">
 		<div class="flex float-right mr-2 md:mr-4 my-2">
 		<!--{#if } loggedin === false-->
 			<span class="i-uiw-login text-2xl"/>
@@ -71,13 +82,13 @@
 			<span class="i-iconoir:profile-circled text-2xl"/>
 		</div>
 	</div>
-			<ul hidden={!showMobileMenu} class="w-full lg:hidden p-4">
-			{#each navItems as page}
-				<a href={page.href}>
-					<li class="p-2 w-full hover:bg-white hover:text-black">	
-							{page.name}					
-					</li>
-				</a>
-			{/each}
-		</ul>
+	<ul hidden={!showMobileMenu} class="w-full lg:hidden">
+		{#each navItems as page}
+			<a href={page.href}>
+				<li class="px-4 py-2 w-full hover:bg-white hover:text-black">	
+						{page.name}					
+				</li>
+			</a>
+		{/each}
+	</ul>
 </div>
