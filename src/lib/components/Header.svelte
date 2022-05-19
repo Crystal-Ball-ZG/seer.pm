@@ -13,16 +13,16 @@
 		{ name: 'Resources', href: 'resources' }
 	];
 
-	
+	//auto
 	//var input = document.getElementById('search');
 	//input.focus();
 	//input.select();
 	
 </script>
 
-<div class="flex flex-wrap w-full border-b-1 md:border-0 border-white mb-4">
+<div class="flex flex-wrap w-full border-b-1 md:border-0 border-white mb-8 md:px-4">
 	<div class="flex w-full h-18 lg:h-20 px-2 md:px-4">
-		<div class="flex flex-row sm:w-1/2 lg:w-35/100 w-35/100 items-center">
+		<div class="flex flex-row w-35/10 items-center">
 			<div class="mr-4">
 				<a href="/">
 					<svg class="w-10 h-10 md:w-12 md:w-12"
@@ -45,9 +45,9 @@
 				<h1 class="text-lg xl:text-xl font-600 block sm:hidden lg:block xl:hidden">seer.pm</h1>
 			</a>
 		</div>
-		<nav class="flex w-65/100 sm:w-1/2 lg:w-65/100 relative justify-between">
-			<div class="items-center relative my-auto">
-				<ul class="hidden lg:flex flex-row font-bold list-none items-center">
+		<nav class="flex w-65/100 relative justify-start">
+			<div class="items-center relative my-auto hidden lg:flex">
+				<ul class="flex flex-row font-bold list-none items-center">
 					{#each navItems as page} <!-- TODO: create navi-items as boxes that  -->
 					<a href={page.href}>
 						<li class="md:mx-2 xl:mx-4 hover:text-#6236FF">
@@ -58,15 +58,15 @@
 				</ul>
 			</div>
 			<div class="flex flex-row my-auto">
-			<div hidden={!showSearchBar} class="min-w-50 rounded-xl h-9 -mr-8 lg:-mr-10 px-4 pr-10 py-1 bg-white text-#6236FF">
-				<form>
-					<input type="text" id="search" name="search" placeholder="Search..." class="h-7">
-				</form>
-			</div>
-				<div class="mt-1 md:mt=0 mr-3">
+				<div hidden={!showSearchBar} class="min-w-20 md:min-w-50 rounded-xl h-9 -mr-8 lg:-mr-10 px-4 pr-10 py-1 bg-white text-#6236FF outline-1">
+					<form>
+						<input type="text" id="search" name="search" placeholder="Search..." class="h-7 focus:outline-0">
+					</form>
+				</div>
+				<div class="mt-1 mr-3">
 					<div on:click={()=> showSearchBar = !showSearchBar} >	
-					<div class="i-ant-design-search-outlined text-3xl md:text-4xl text-#6236FF hover:animate-swing"></div>
-				 </div>			
+						<div class="i-ant-design-search-outlined text-2xl md:text-3xl text-#6236FF hover:animate-swing"></div>
+				 	</div>			
 				</div>			
 				<div on:click={()=> showMobileMenu = !showMobileMenu}  class="lg:hidden">
 					<div class="i-gg-menu-hotdog text-4xl md:text-4xl text-white hover:text-#6236FF hover:animate-flip"></div>
@@ -74,8 +74,8 @@
 			</div>
 		</nav>
 	</div>
-	<div class="w-full bg-#6236FF h-12 px-2">
-		<div class="flex float-right mr-2 md:mr-4 my-2">
+	<div class="w-full bg-#6236FF h-12 flex justify-end">
+		<div class="flex mr-2 sd:mr-4 items-center">
 		<!--{#if } loggedin === false-->
 			<span class="i-uiw-login text-2xl"/>
 		<!--else -->
