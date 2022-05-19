@@ -22,7 +22,7 @@
 
 <div class="flex flex-wrap w-full border-b-1 md:border-0 border-white mb-8 md:px-4">
 	<div class="flex w-full h-18 lg:h-20 px-2 md:px-4">
-		<div class="flex flex-row w-35/10 items-center">
+		<div class="flex flex-row items-center ml-2">
 			<div class="mr-4">
 				<a href="/">
 					<svg class="w-10 h-10 md:w-12 md:w-12"
@@ -41,11 +41,8 @@
 					</svg>
 					</a>
 				</div>
-				<a href="/">
-				<h1 class="text-lg xl:text-xl font-600 block sm:hidden lg:block xl:hidden">seer.pm</h1>
-			</a>
 		</div>
-		<nav class="flex w-65/100 relative justify-start">
+		<nav class="flex relative lg:justify-between justify-end w-full">
 			<div class="items-center relative my-auto hidden lg:flex">
 				<ul class="flex flex-row font-bold list-none items-center">
 					{#each navItems as page} <!-- TODO: create navi-items as boxes that  -->
@@ -75,7 +72,7 @@
 		</nav>
 	</div>
 	<div class="w-full bg-#6236FF h-12 flex justify-end">
-		<div class="flex mr-2 sd:mr-4 items-center">
+		<div class="flex mr-2 :mr-4 items-center">
 		<!--{#if } loggedin === false-->
 			<span class="i-uiw-login text-2xl"/>
 		<!--else -->
